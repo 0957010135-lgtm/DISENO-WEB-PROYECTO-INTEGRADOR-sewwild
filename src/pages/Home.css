@@ -1,0 +1,87 @@
+
+.home-page .hero {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.home-page .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+.home-page .hero section { position: relative; z-index: 1; text-align: center; color: var(--white); background: rgba(0,0,0,0.2); padding: 4rem; backdrop-filter: blur(2px); }
+
+.home-page .hero h1 { font-size: clamp(3rem, 10vw, 6rem); line-height: 0.9; margin-bottom: 1rem; }
+
+.home-page .hero p { text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 2rem; font-weight: 800; }
+
+.home-page .featured { padding: 4rem 0 8rem; }
+
+.home-page .featured nav { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: baseline; 
+  margin-bottom: 3rem; 
+  border-bottom: 2px solid var(--black); 
+  padding-bottom: 1rem; 
+}
+
+.home-page .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; }
+
+.home-page .featured small { 
+  display: block; 
+  text-transform: uppercase; 
+  color: var(--red); 
+  margin-bottom: 1.5rem; 
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+}
+
+.home-offers-banner { padding: 4rem 0; }
+
+.offers-banner {
+  background: var(--black);
+  color: var(--white);
+  padding: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 8px solid var(--red);
+  transition: transform 0.2s;
+}
+
+.offers-banner:hover {
+  transform: scale(1.01);
+}
+
+.offers-banner small {
+  display: block;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.offers-banner h2 {
+  font-size: 3.5rem;
+  letter-spacing: -2px;
+}
+
+.offers-banner span {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 968px) {
+  .home-page .product-grid { grid-template-columns: 1fr; }
+  .offers-banner { padding: 4rem 2rem; flex-direction: column; text-align: center; gap: 3rem; }
+  .offers-banner h2 { font-size: 2.5rem; }
+}
