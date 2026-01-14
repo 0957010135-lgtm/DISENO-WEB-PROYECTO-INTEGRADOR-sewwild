@@ -1,0 +1,66 @@
+.search-page { padding: 6rem 0; }
+
+.search-header { max-width: 900px; margin: 0 auto 8rem; text-align: center; }
+.search-header h1 { font-size: 6rem; margin-bottom: 4rem; letter-spacing: -5px; }
+
+.search-tabs { display: flex; justify-content: center; gap: 5rem; margin-bottom: 5rem; }
+.search-tabs button { 
+  background: none; 
+  border: none; 
+  padding-bottom: 0.5rem; 
+  font-weight: 900; 
+  text-transform: uppercase; 
+  color: var(--gray-dark); 
+  border-bottom: 3px solid transparent; 
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+}
+.search-tabs button.active { color: var(--black); border-color: var(--red); }
+
+.search-input-wrapper input { 
+  width: 100%; 
+  background: none; 
+  border: none; 
+  border-bottom: 5px solid var(--black); 
+  padding: 1rem 0 2rem; 
+  font-size: clamp(1.5rem, 5vw, 3rem); 
+  font-weight: 900; 
+  text-transform: uppercase; 
+  text-align: center; 
+  outline: none; 
+  letter-spacing: -1px;
+}
+
+.results-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+  gap: 4rem; 
+}
+
+.supplier-result { 
+  padding: 4rem; 
+  border: 3px solid var(--gray-light); 
+  transition: 0.3s; 
+}
+.supplier-result:hover { border-color: var(--black); transform: translateY(-5px); }
+
+.supplier-result small { color: var(--red); font-weight: 900; text-transform: uppercase; display: block; margin-bottom: 1.5rem; font-size: 0.65rem; letter-spacing: 0.2em; }
+.supplier-result h3 { font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 0.9; }
+.supplier-result p { color: var(--gray-dark); margin-bottom: 3rem; line-height: 1.6; }
+.supplier-result footer { font-weight: 900; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.1em; border-top: 1px solid var(--gray-light); padding-top: 2rem; }
+
+.no-results { 
+  grid-column: 1/-1; 
+  text-align: center; 
+  padding: 8rem; 
+  border: 3px dashed var(--gray-light); 
+  font-weight: 900; 
+  text-transform: uppercase; 
+  color: var(--gray-dark); 
+  letter-spacing: 0.3em;
+}
+
+@media (max-width: 768px) {
+  .search-tabs { gap: 2rem; }
+  .search-header h1 { font-size: 4rem; }
+}

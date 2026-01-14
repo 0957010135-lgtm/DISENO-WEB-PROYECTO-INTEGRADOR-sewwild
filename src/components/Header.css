@@ -42,6 +42,21 @@
 
 .site-header .cart-link { position: relative; }
 
+.site-header .cart-link span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.7rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .site-header a:not(.logo):not(.cart-link) { display: none; }
   .site-header nav { padding: 0 1.5rem; }

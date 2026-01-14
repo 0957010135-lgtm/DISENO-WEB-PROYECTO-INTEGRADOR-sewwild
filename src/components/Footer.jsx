@@ -13,9 +13,9 @@ const Footer = () => {
         
         <nav>
           <h3>Navegación</h3>
-          <Link to="/">Acerca de</Link>
-          <Link to="/">Preguntas Frecuentes</Link>
-          <Link to="/">Contacto</Link>
+          <Link to="/acerca-de">Acerca de</Link>
+          <Link to="/preguntas-frecuentes">FAQs</Link>
+          <Link to="/contacto">Contáctanos</Link>
         </nav>
       </section>
       

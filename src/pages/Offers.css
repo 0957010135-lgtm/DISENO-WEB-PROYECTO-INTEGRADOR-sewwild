@@ -1,0 +1,27 @@
+.offers-page { padding: 8rem 0; }
+
+.offers-page header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 6rem; padding-bottom: 2rem; border-bottom: 2px solid var(--black); }
+
+.offers-page header small { color: var(--red); font-size: 0.65rem; letter-spacing: 0.3em; margin-bottom: 1rem; display: block; text-transform: uppercase; font-weight: 800; }
+
+.offers-page header h1 { font-size: 5rem; line-height: 0.9; }
+.offers-page header h1 span { color: var(--red); }
+
+.offers-page header button { background: transparent; border: none; font-size: 0.7rem; letter-spacing: 0.2em; color: var(--gray-dark); font-weight: 800; text-transform: uppercase; }
+
+.offers-page .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 4rem; }
+
+.offers-page .empty { text-align: center; padding: 8rem 0; border: 4px dashed var(--gray-light); }
+.offers-page .empty p { font-weight: 800; text-transform: uppercase; margin-bottom: 2rem; }
+.offers-page .empty button { color: var(--red); background: none; border: none; text-decoration: underline; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; }
+
+.offers-page .urgency { background: var(--black); margin-top: 10rem; padding: 10rem 0; color: var(--white); position: relative; overflow: hidden; }
+.offers-page .urgency section { position: relative; z-index: 2; text-align: center; max-width: 600px; margin: 0 auto; }
+.offers-page .urgency h2 { font-size: 3rem; margin-bottom: 1.5rem; letter-spacing: -2px; }
+.offers-page .urgency p { color: rgba(255,255,255,0.6); font-size: 0.8rem; letter-spacing: 0.2em; margin-bottom: 4rem; text-transform: uppercase; font-weight: 800; }
+
+.offers-page .urgency form { display: flex; border-bottom: 2px solid rgba(255,255,255,0.2); padding-bottom: 0.5rem; }
+.offers-page .urgency input { background: transparent; border: none; color: var(--white); flex-grow: 1; font-family: inherit; font-size: 1.2rem; outline: none; text-transform: uppercase; font-weight: 800; }
+.offers-page .urgency form button { background: transparent; border: none; color: var(--red); font-size: 0.8rem; letter-spacing: 0.2em; font-weight: 800; text-transform: uppercase; }
+
+.offers-page .urgency b { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20rem; color: rgba(255, 255, 255, 0.02); pointer-events: none; }

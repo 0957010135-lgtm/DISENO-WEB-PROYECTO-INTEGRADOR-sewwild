@@ -1,0 +1,14 @@
+.faq-page { padding: 120px 0; }
+
+.faq-page h1 { font-size: clamp(3rem, 8vw, 5.5rem); margin-bottom: 80px; text-align: center; }
+.faq-page h1 span { color: var(--red); }
+
+.faq-page section { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 4rem; }
+
+.faq-page article { border-bottom: 1px solid var(--gray-light); padding-bottom: 4rem; }
+
+.faq-page h3 { display: flex; align-items: center; gap: 2rem; font-size: 1.4rem; margin-bottom: 1.5rem; }
+
+.faq-page article span { color: var(--red); font-size: 0.8rem; font-weight: 900; background: var(--gray-light); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+
+.faq-page p { padding-left: 4.5rem; font-size: 1.1rem; color: var(--gray-dark); line-height: 1.7; }

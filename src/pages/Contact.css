@@ -1,0 +1,24 @@
+.contact-page { padding: 10rem 0; text-align: center; max-width: 1000px; margin: 0 auto; }
+
+.contact-page header small { color: var(--red); font-size: 0.7rem; letter-spacing: 0.5em; margin-bottom: 2rem; display: block; text-transform: uppercase; font-weight: 800; }
+
+.contact-page h1 { font-size: clamp(3.5rem, 10vw, 7rem); margin-bottom: 3rem; letter-spacing: -2px; }
+
+.contact-page header p { max-width: 600px; margin: 0 auto 8rem; font-size: 1.1rem; color: var(--gray-dark); line-height: 1.6; font-weight: 800; font-style: italic; }
+
+.contact-page section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; border-top: 1px solid var(--gray-light); padding-top: 5rem; margin-bottom: 10rem; }
+
+.contact-page article small { font-size: 0.65rem; color: var(--gray-dark); letter-spacing: 0.3em; margin-bottom: 1rem; display: block; text-transform: uppercase; font-weight: 800; }
+
+.contact-page article a, .contact-page article p { font-size: 1.4rem; color: var(--black); font-weight: 800; text-transform: uppercase; }
+.contact-page article a:hover { color: var(--red); }
+.contact-page article p span { color: var(--red); }
+
+.contact-page footer { background: var(--black); color: var(--white); padding: 8rem 5rem; position: relative; overflow: hidden; text-align: left; }
+.contact-page footer h3 { font-size: 1.2rem; letter-spacing: 0.1em; margin-bottom: 1rem; color: var(--red); }
+.contact-page footer p { color: rgba(255, 255, 255, 0.7); font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 800; }
+.contact-page footer b { position: absolute; bottom: -20px; right: -20px; font-size: 20rem; color: rgba(255, 255, 255, 0.03); pointer-events: none; }
+
+@media (max-width: 850px) {
+  .contact-page section { grid-template-columns: 1fr; gap: 4rem; }
+}
